@@ -43,10 +43,22 @@ public class Cat {
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
 		
 		// Add text!
-		g2.setColor(Color.black);
+		g2.setColor(Color.red);
 		g2.drawString("cat!", catX, catY+HEAD_DIMENSION+10);
+		
+		g2.setColor(Color.black);
 		g2.drawString("I'm a kitty cat", catX, catY+HEAD_DIMENSION+30);
-		g2.drawString("and I dance dance dance", catX+40, catY+HEAD_DIMENSION+50);
-		g2.drawString("and I dance dance dance!!", catX+50, catY+HEAD_DIMENSION+60);
+		g2.drawString("and I dance", catX+40, catY+HEAD_DIMENSION+50);
+		g2.setColor(Color.red);
+		g2.drawString("         dance", catX+40, catY+HEAD_DIMENSION+65);
+		g2.setColor(Color.blue);
+		g2.drawString("         dance", catX+40, catY+HEAD_DIMENSION+80);
+		
+		g2.setColor(Color.black);
+		g2.drawString("and I dance", catX+60, catY+HEAD_DIMENSION+100);
+		g2.setColor(Color.GREEN);
+		g2.drawString("         dance", catX+60, catY+HEAD_DIMENSION+115);
+		g2.setColor(Color.red);
+		g2.drawString("         dance!!", catX+60, catY+HEAD_DIMENSION+130);
 	}
 }
